@@ -8,7 +8,7 @@ public class Calculation {
         for (int month = 0; month < 12; month++) {
             if (money >= threshold) {
                 count++;
-                money = money / 3 - expenses;
+                money = (money - expenses) / 3;
             } else {
                 money = money + income - expenses;
             }
